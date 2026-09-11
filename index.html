@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Birthday V4 — Likhitha (Jerry)</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================
+       OPENING LOVE INTRO
+       ========================================= -->
+
+  <div id="loveIntro">
+
+    <div class="love-heart-wrap">
+
+      <div class="love-heart">
+        ♥
+      </div>
+
+      <div class="heart-glow"></div>
+
+    </div>
+
+
+    <div
+      class="floating-hearts"
+      aria-hidden="true"
+    >
+
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+      <span>♥</span>
+
+    </div>
+
+
+    <!-- Changing text -->
+
+    <div class="intro-text-box">
+
+      <p id="introText"></p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =========================================
+       MAIN WEBSITE
+       ========================================= -->
+
+  <main id="app">
+
+
+    <!-- =========================================
+         BACKGROUND DECORATION
+         ========================================= -->
+
+    <div class="stars"></div>
+
+
+    <div
+      class="hanging"
+      aria-hidden="true"
+    >
+
+      <span>☾</span>
+      <i>✦</i>
+      <b>★</b>
+      <em>✦</em>
+      <span>☽</span>
+
+    </div>
+
+
+    <div
+      class="balloon-floor"
+      aria-hidden="true"
+    >
+
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+
+    </div>
+
+
+
+    <!-- =========================================
+         LOADING
+         ========================================= -->
+
+    <section
+      class="screen active"
+      id="loading"
+    >
+
+      <div class="loader-heart">
+        ♥
+      </div>
+
+      <p>
+        Almost ready...
+      </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WELCOME
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="welcome"
+    >
+
+      <div class="card welcome-card">
+
+
+        <div class="cute-character">
+
+          <img
+            src="https://media.tenor.com/1QR1IU5NfkcAAAAi/cute-cats.gif"
+            alt="Cute cats"
+          >
+
+        </div>
+
+
+        <h1>
+
+          Hello,
+
+          <span>
+            Likhitha(Jerry)
+          </span>
+
+        </h1>
+
+
+        <p id="welcomeText">
+
+          Today is your special day!
+          But wait... this place is missing
+          a little magic...
+
+        </p>
+
+
+        <button
+          class="btn pink"
+          id="decorate"
+        >
+
+          ✨ Let's Decorate
+
+        </button>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SPECIAL NUMBER
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="number"
+    >
+
+      <div class="card number-card">
+
+
+        <h2>
+          A Special Number
+        </h2>
+
+
+        <p>
+
+          Let's see how many wonderful<br>
+          years you've collected...
+
+        </p>
+
+
+        <!-- Hidden number initially -->
+
+        <div
+          class="odometer hidden-number"
+          id="specialNumber"
+        >
+
+          <span id="digitTwo">
+            2
+          </span>
+
+          <span id="digitZero">
+            0
+          </span>
+
+        </div>
+
+
+        <!-- Reveal -->
+
+        <button
+          class="btn pink"
+          id="revealNumber"
+        >
+
+          ✨ Reveal
+
+        </button>
+
+
+        <!-- Message -->
+
+        <p
+          class="gold special-message"
+          id="specialMessage"
+        >
+
+          20 years of smiles,<br>
+          memories, and beautiful<br>
+          moments 💛
+
+        </p>
+
+
+        <!-- Continue -->
+
+        <button
+          class="btn dark continue-number"
+          id="continueNumber"
+          data-next="things"
+        >
+
+          Continue →
+
+        </button>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         12 THINGS
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="things"
+    >
+
+
+      <div class="heading">
+
+        <h2>
+
+          12 Things I Love<br>
+          About You
+
+        </h2>
+
+        <p>
+          Little things I adore ❤️
+        </p>
+
+      </div>
+
+
+
+      <div class="flip-wrap">
+
+        <div
+          class="love-card"
+          id="loveCard"
+        >
+
+
+          <!-- FRONT -->
+
+          <div class="face front">
+
+            <strong id="loveNumber">
+              #1
+            </strong>
+
+            <button class="hint">
+              Tap to flip ✨
+            </button>
+
+          </div>
+
+
+          <!-- BACK -->
+
+          <div class="face back">
+
+            <span style="font-size: 40px;">
+              ❤️
+            </span>
+
+            <p id="loveText"></p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div
+        class="counter"
+        id="loveCounter"
+      >
+
+        1 / 12
+
+      </div>
+
+
+
+      <button
+        class="btn pink hidden"
+        id="loveNext"
+      >
+
+        Next →
+
+      </button>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         POP THE BALLOONS
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="balloons"
+    >
+
+
+      <div class="heading">
+
+        <h2>
+          Pop the Balloons
+        </h2>
+
+        <p>
+          Tap to see what I think of you ❤️
+        </p>
+
+      </div>
+
+
+      <!-- Balloons are created by JavaScript -->
+
+      <div
+        class="pop-area"
+        id="popArea"
+      ></div>
+
+
+      <button
+        class="btn pink hidden"
+        id="memoryStart"
+      >
+
+        Cute Memories →
+
+      </button>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         CUTE MEMORIES
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="memories"
+    >
+
+
+      <div class="heading">
+
+        <h2>
+          Cute Memories
+        </h2>
+
+        <p>
+          Moments I'll treasure forever ❤️
+        </p>
+
+      </div>
+
+
+
+      <!-- REAL PHOTO AREA -->
+
+      <div class="memory-stage">
+
+        <div
+          class="polaroid"
+          id="memoryPhoto"
+        >
+
+
+          <img
+            id="memoryImage"
+            class="memory-image"
+            src="photos/memory1.jpeg"
+            alt="Cute memory"
+          >
+
+
+          <small id="memoryCaption">
+
+            A little moment to treasure ✨
+
+          </small>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PHOTO COUNTER -->
+
+      <div
+        class="counter"
+        id="memoryCounter"
+      >
+
+        1 / 5
+
+      </div>
+
+
+
+      <!-- NEXT PHOTO -->
+
+      <button
+        class="btn pink"
+        id="memoryNext"
+      >
+
+        Next Memory →
+
+      </button>
+
+
+    </section>
+
+
+
+<!-- =========================================
+     HUG TRANSITION
+     ========================================= -->
+
+<section class="screen transition" id="hug">
+
+  <div class="hug-art">
+
+    <img
+      src="hug.gif"
+      class="hug-gif"
+      alt="Cute animated hug"
+    >
+
+  </div>
+
+  <h2>
+    Sending a big hug...
+  </h2>
+
+  <p>
+    Before we cut the cake!
+  </p>
+
+</section>
+
+
+
+    <!-- =========================================
+         MAKE A WISH
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="wish"
+    >
+
+
+      <div class="heading wish-heading">
+
+        <h2>
+          Make a Wish!
+        </h2>
+
+        <p>
+
+          Tap the flame on each<br>
+          candle to blow it out.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="cake-wrap">
+
+        <div class="cake">
+
+
+          <div
+            class="candles"
+            id="candles"
+          ></div>
+
+
+          <div class="icing"></div>
+
+
+          <div class="cake-body">
+
+            <span>
+              ♥
+            </span>
+
+          </div>
+
+
+          <div class="plate"></div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <p
+        class="wish-tip"
+        id="wishTip"
+      >
+
+        Make a wish... ✨
+
+      </p>
+
+
+      <canvas id="fireworks"></canvas>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         BIRTHDAY
+         ========================================= -->
+
+    <section
+      class="screen birthday"
+      id="birthday"
+    >
+
+
+      <div class="party">
+
+        <span>✦</span>
+        <span>🎉</span>
+        <span>✦</span>
+
+      </div>
+
+
+      <img
+  class="birthday-gif"
+  src="https://media.tenor.com/l2QU5JIn6q0AAAAi/happy-birthday.gif"
+  alt="Cute celebration"
+>
+
+
+      <h2>
+
+        Yay! Happy Birthday,<br>
+
+        <span>
+          Likhitha(Jerry) ❤️
+        </span>
+
+      </h2>
+
+
+      <button
+        class="btn yellow"
+        id="openLetter"
+      >
+
+        Open Your Letter ✉
+
+      </button>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         LETTER
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="letter"
+    >
+
+
+      <div class="card letter-card">
+
+
+        <div class="sheep small"></div>
+
+
+        <h2>
+          My Dear Jerry ❤️
+        </h2>
+
+
+        <div class="letter-text">
+
+
+          <p>
+
+            Today is a beautiful reminder of how lucky
+            I am to have someone as amazing as you in
+            my life. You bring so much happiness,
+            warmth, and positivity just by being yourself.
+
+          </p>
+
+
+          <p>
+
+            Over time, so many wonderful memories and
+            little moments have found a special place in
+            my heart. No matter where life takes us,
+            I will always cherish those moments and be
+            grateful for having you in my life.
+
+          </p>
+
+
+          <p>
+
+            Happy Birthday, Likhitha(Jerry).
+            You are truly special to me. ❤️
+
+          </p>
+
+
+        </div>
+
+
+        <button
+          class="btn pink"
+          id="lastThing"
+        >
+
+          One last thing →
+
+        </button>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         GIFT
+         ========================================= -->
+
+    <section
+      class="screen gift-screen"
+      id="gift"
+    >
+
+
+      <h2>
+        One last thing for you...
+      </h2>
+
+
+      <p>
+        Tap to open the gift
+      </p>
+
+
+      <button
+        class="gift-box"
+        id="giftBox"
+      >
+
+        <span class="gift-lid"></span>
+
+        <span class="gift-base"></span>
+
+        <span class="gift-ribbon-v"></span>
+
+        <span class="gift-ribbon-h"></span>
+
+        <span class="bow">
+          ⌁
+        </span>
+
+      </button>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         END
+         ========================================= -->
+
+    <section
+      class="screen"
+      id="end"
+    >
+
+
+      <div class="card end-card">
+
+
+        <div class="sheep pair">
+
+          <div></div>
+          <div></div>
+
+        </div>
+
+
+        <h2>
+
+          Thank you for<br>
+          being in my life.
+
+        </h2>
+
+
+        <p>
+
+          I hope this little world
+          made you smile today.<br>
+
+          Happy Birthday once again,<br>
+
+          <b>
+            Likhitha(Jerry)❤️
+          </b>
+
+        </p>
+
+
+        <div class="end-line">
+          — The End —
+        </div>
+
+
+        <button
+          class="btn dark"
+          id="again"
+        >
+
+          ⟳ &nbsp; Experience it again
+
+        </button>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       JAVASCRIPT
+       ========================================= -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
